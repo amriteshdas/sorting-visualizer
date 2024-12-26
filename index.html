@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sorting Visualizer</h1>
+      <p>Visualize sorting step by step using popular algorithms.</p>
+    </header>
+    <main>
+      <div class="controls">
+        <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas" />
+        <select id="algorithmSelect">
+          <option value="bubbleSort">Bubble Sort</option>
+          <option value="selectionSort">Selection Sort</option>
+          <option value="insertionSort">Insertion Sort</option>
+        </select>
+        <button id="startBtn">Start Sorting</button>
+      </div>
+      <div class="array-display">
+        <h2>Array:</h2>
+        <div id="arrayContainer" class="array-container"></div>
+      </div>
+      <div class="steps-container">
+        <div class="current-step">
+          <h2>Current Step:</h2>
+          <p id="currentStep">No steps performed yet.</p>
+        </div>
+        <div class="all-steps">
+          <h2>All Steps:</h2>
+          <ul id="allStepsList" class="steps-list"></ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2024 Sorting Visualizer | Created by Joy</p>
+  </footer>
+</body>
+</html>
